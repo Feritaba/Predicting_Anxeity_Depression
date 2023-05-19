@@ -131,14 +131,6 @@ class Preprocessor:
                                                               self.my_dataframe.target)
 
 
-class Model:
-    pass
-
-
-class Evaluate:
-    pass
-
-
 def main():
     my_dataframe = MyDataframe()
     columns_to_drop_list = ['Anxiety symptoms', 'Panic attack symptoms', 'Depressive symptoms']
@@ -151,7 +143,7 @@ def main():
                                    columns_to_drop_list=columns_to_drop_list)
     preprocessor_depression = Preprocessor(my_dataframe_dep)
 
-    print(preprocessor_anxiety.features[:2])
+    print(preprocessor_anxiety.x_features.shape, preprocessor_anxiety.y_features.shape)
     print(preprocessor_depression.features[:2])
 
 
