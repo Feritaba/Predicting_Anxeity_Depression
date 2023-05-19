@@ -14,4 +14,16 @@ To run the project:
 <br> 
 <br>All .ipynb files are used for experiments and prototyping of choosing the best method in each step.
 
-<br>This project is done as part of the DATA 240 course at SJSU, Spring 2023.
+### Contributions:
+This project is done as part of the DATA 240 course at SJSU, Spring 2023. The contributions to this project are as follow:
+<br>Problem Definition and Data Collection : Pallavi, Foroozan, Deepak
+<br>Exploratory Data Analysis : Pallavi, Deepak
+<br>Data Pre-processing : Deepak, Foroozan
+<br>Feature Selection : Pallavi, Deepak
+<br>Modeling : Foroozan, Pallavi
+<br>Experimental Analysis : Foroozan, Deepak
+<br>Evaluation : Pallavi, Foroozan
+<br>Conclusion & Documentation : Pallavi, Foroozan, Deepak
+
+
+
