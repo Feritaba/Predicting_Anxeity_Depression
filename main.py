@@ -1,6 +1,6 @@
 from dataframe import MyDataframe
 from preprocessor import Preprocessor
-from modeling import FeatureSelection
+from modeling import DataModeling
 
 
 def main():
@@ -11,8 +11,8 @@ def main():
                                columns_to_drop_list=columns_to_drop_list)
     preprocessor_anxiety = Preprocessor(my_dataframe)
 
-    feat_select_anx = FeatureSelection("Anxiety", preprocessor_anxiety)
-    feat_select_anx.random_forest()
+    feat_select_anx = DataModeling("Anxiety", preprocessor_anxiety)
+    feat_select_anx.feature_selecting_rf()
     feat_select_anx.modeling()
 
     print("######################################")
@@ -23,8 +23,8 @@ def main():
                                    columns_to_drop_list=columns_to_drop_list)
 
     preprocessor_depression = Preprocessor(my_dataframe_dep)
-    feat_select_dep = FeatureSelection("Depression", preprocessor_depression)
-    feat_select_dep.random_forest()
+    feat_select_dep = DataModeling("Depression", preprocessor_depression)
+    feat_select_dep.feature_selecting_rf()
     feat_select_dep.modeling()
 
 

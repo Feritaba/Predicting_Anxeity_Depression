@@ -65,6 +65,7 @@ class Preprocessor:
             self.missing_encoder[col] = le
 
     def imputing_missing_values(self):
+        print("Preprocessing the data...")
         # mice imputing data
         mice_imputed = mice(self.missing_data.values.astype('float64'))
         self.missing_data = pd.DataFrame(mice_imputed, columns=self.missing_data.columns)
@@ -94,7 +95,6 @@ class Preprocessor:
                                   self.missing_data['Diastolic blood pressure (mmHg)']
 
     def merging_dataframe(self):
-        # self.features = pd.DataFrame()
         self.features = self.selected_features
         self.features = self.features.join(self.missing_data)
         self.features = self.features.drop(labels=['Weight (kg)',
@@ -104,6 +104,7 @@ class Preprocessor:
                                            axis=1)
 
     def normalizing_oversampling(self):
+
         scale = MinMaxScaler()
         feature_normalizing = self.features[['BMI', 'MAP', 'PP', 'Heart rate (bpm)']]
         normalized = scale.fit_transform(feature_normalizing)
@@ -111,6 +112,11 @@ class Preprocessor:
         self.features = self.features.drop(['BMI', 'MAP', 'PP', 'Heart rate (bpm)'],
                                            axis=1)
         self.features = self.features.join(x)
+
+        print("######################################")
+        print("Starting oversampling...")
         smote = SMOTE(random_state=42)
         self.x_features, self.y_features = smote.fit_resample(self.features,
                                                               self.my_dataframe.target)
+        print("number of rows after oversampling changed from", str(self.features.shape), "to ",
+              str(self.x_features.shape))

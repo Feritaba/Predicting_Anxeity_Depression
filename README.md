@@ -9,8 +9,8 @@ To run the project:
 - cd into root of the project and create a virtual environment with Python 3.9
 - run `pip install -r requirements.txt`
 - run `python main.py`
-- 
-<br>In modeling.py file, the data has been fitted to the 2 most accurate models, which are Ensemble model, that is consists of Random Forest and base estimator and AdaBoost as boosting technique, and aslo XGBoost which is the second best working model.
+- You will see the results for 2 predictions, first, predicting anxiety and second, predicting depression. With getting to each step, the program prints the step following the list of feature selection along with its scores and modeling evaluations.
+<br>In modeling.py file, the data has been fitted to our most well performed model, Ensemble model, which consists of Random Forest as the base estimator and AdaBoost as boosting technique.
 <br> 
 <br>All .ipynb files are used for experiments and prototyping of choosing the best method in each step.
 

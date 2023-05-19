@@ -1,12 +1,12 @@
 import pandas as pd
 
 
+# Creating instances of dataframe, Anxiety and Depression
 class MyDataframe:
     def __init__(self):
         self.df = pd.read_csv('./student.csv')
         pd.set_option('display.max_rows', None)
         pd.set_option('display.max_columns', None)
-
         self.target = None
 
     def create_target(self, target_column_name, columns_to_drop_list):
