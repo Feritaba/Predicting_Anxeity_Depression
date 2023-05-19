@@ -11,8 +11,9 @@ To run the project:
 - run `python main.py`
 - You will see the results for 2 predictions, first, predicting anxiety and second, predicting depression. With getting to each step, the program prints the step following the list of feature selection along with its scores and modeling evaluations.
 <br>In modeling.py file, the data has been fitted to our most well performed model, Ensemble model, which consists of Random Forest as the base estimator and AdaBoost as boosting technique.
-<br> 
-<br>All .ipynb files in "ExperimentationFiles_FeatureSelection_Imputation_Modelings" folder are used for experiments and prototyping of choosing the best method in each step such as missing value imputations, feature selection and modeling.
+
+### Experimental Notebooks
+All .ipynb files in "ExperimentationFiles_FeatureSelection_Imputation_Modelings" folder are used for experiments and prototyping of choosing the best method in each step such as missing value imputations, feature selection and modeling.
 
 ### Contributions:
 This project is done as part of the DATA 240 course at SJSU, Spring 2023. The contributions to this project are as follow:
