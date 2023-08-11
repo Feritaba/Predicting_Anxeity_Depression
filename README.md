@@ -1,8 +1,6 @@
 # Depression and Anxiety Prediction of Students using Electronic Health Records
 
-Link to [access the project](https://github.com/Feritaba/Predicting_Anxeity_Depression) online.
-
-
+Link to [access the project](https://github.com/Feritaba/Predicting_Anxeity_Depression) online
 <br>
 In this project we are trying to capture the patterns that will lead to depression and anxiety in students pursing bachelor degree.
 ### DATASET
@@ -31,8 +29,6 @@ This project is done as part of the DATA 240 course at SJSU, Spring 2023.
 <!--<br>Experimental Analysis : Foroozan, Deepak -->
 <!--<br>Evaluation : Pallavi, Foroozan -->
 <!--<br>Conclusion & Documentation : Pallavi, Foroozan, Deepak --> 
-
-
 
 
 
