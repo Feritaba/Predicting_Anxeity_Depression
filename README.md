@@ -6,6 +6,14 @@ In this project we are trying to capture the patterns that will lead to depressi
 ### DATASET
 The dataset can be found [here](https://datadryad.org/stash/dataset/doi:10.5061/dryad.54qt7).
 
+### OVERVIEW
+
+This project predicts anxiety and depression separately. First, in the "preprocessing.py" we have methods to clean the data such as imputing the missing values, encoding the labels, forming new features, merging the datasets, normalizing and balancing the dataset.
+<br>
+In the "modeling.py" we selected important features using Random Forest and predicted the target using AdaBoost.
+<br>
+In the "main.py" file we will run all the steps for the project to show us the results at the end.
+
 ### RUN THE PROJECT
 To run the project:
 - cd into root of the project and create a virtual environment with Python 3.9
