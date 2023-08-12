@@ -8,11 +8,11 @@ The dataset can be found [here](https://datadryad.org/stash/dataset/doi:10.5061/
 
 ### OVERVIEW
 
-This project predicts anxiety and depression separately. First, in the "preprocessing.py" we have methods to clean the data such as imputing the missing values, encoding the labels, forming new features, merging the datasets, normalizing and balancing the dataset.
+This project predicts anxiety and depression separately. First, in the "preprocessing.py" we have methods to clean the data such as imputing the missing values using MICE, KNN and MeanMode, encoding the labels, forming new features, merging the datasets, normalizing and balancing the dataset.
 <br>
-In the "modeling.py" we selected important features using Random Forest and predicted the target using AdaBoost.
+In the "modeling.py" we selected important features using Random Forest, SelectKBest, Recursive Feature Elimination with Cross-Validation (RFECV) with RF base classifier to select the top 20 features out of more than 60 features. Then, predicted the target using Ensemble model of AdaBoost, SVM, Neural Networks, Logistic Regression, XGBoost and Random Forest.
 <br>
-In the "main.py" file we will run all the steps for the project to show us the results at the end.
+By running "main.py" file we can see all the steps for the project and the final evaluation results.
 
 ### RUN THE PROJECT
 To run the project:
