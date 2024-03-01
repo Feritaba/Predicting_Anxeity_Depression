@@ -26,7 +26,7 @@ To run the project:
 All .ipynb files in "ExperimentationFiles_FeatureSelection_Imputation_Modelings" folder are used for experiments and prototyping of choosing the best method in each step such as missing value imputations, feature selection and modeling.
 
  <!-- ### Contributions: -->
-This project is done as part of the DATA 240 course at SJSU, Spring 2023.
+<!--This project is done as part of the DATA 240 course at SJSU, Spring 2023. -->
 
 <!--The contributions to this project are as follow: -->
 <!--<br>Problem Definition and Data Collection : Pallavi, Foroozan, Deepak -->
